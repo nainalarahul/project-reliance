@@ -1,0 +1,717 @@
+.default {
+   margin-top: 20px;
+   font-size: 25px;
+    text-align: center;
+    color: whitesmoke;
+  }
+  .text_imp{
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+    color: whitesmoke;
+  }
+
+  .button_submit {
+    background-color: #00A36C;
+    color: white;
+    border-radius: 25px;
+    border: 3px solid whitesmoke;
+    font-size: 20px;
+    width: 300px;
+    height: 50px;
+}
+
+    .button_submit:hover{
+    background-color: #2AAA8A;
+    }
+
+  #Default {
+    border-radius: 25px;
+    color: white;
+     background-image: linear-gradient(to right,  #D7AF64, #DFBF83);
+    border: 2px solid white;
+    font-weight: 300;
+    font-size: 20px;
+    height: 15px;     
+    width: 1200px;
+    max-width: calc(100% - 50%);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+    
+    #Default:hover{
+    color: black;
+    box-shadow: 15px 15px 15px  grey;
+    }
+
+#MicrosoftAspNetCore
+{
+    border-radius: 25px;
+    color: white;
+     background-image: linear-gradient(to right,  #D7AF64, #DFBF83);
+    border: 2px solid white;
+    font-weight: 300;
+    font-size: 20px;
+    height: 15px;     
+    width: 1200px;
+    max-width: calc(100% - 50%);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#MicrosoftAspNetCore:hover{
+    color: black;
+    box-shadow: 15px 15px 15px grey;
+}
+
+#AllowedHosts
+{
+    border-radius: 25px;
+    color: white;
+     background-image: linear-gradient(to right,  #D7AF64, #DFBF83);
+    border: 2px solid white;
+    font-weight: 300;
+    font-size: 20px;
+    height: 15px;     
+    width: 1200px;
+    max-width: calc(100% - 50%);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#AllowedHosts:hover{
+    color: black;
+    box-shadow: 15px 15px 15px grey;
+}
+
+
+#CORSOrigin
+{
+    border-radius: 25px;
+    color: white;
+     background-image: linear-gradient(to right,  #D7AF64, #DFBF83);
+    border: 2px solid white;
+    font-weight: 300;
+    font-size: 20px;
+    height: 15px;     
+    width: 1200px;
+    max-width: calc(100% - 50%);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+#CORSOrigin:hover{
+    color: black;
+    box-shadow: 15px 15px 15px grey;
+}
+
+#Name
+{
+    border-radius: 25px;
+    color: white;
+     background-image: linear-gradient(to right,  #D7AF64, #DFBF83);
+    border: 2px solid white;
+    font-weight: 300;
+    font-size: 20px;
+    height: 15px;     
+    width: 1200px;
+    max-width: calc(100% - 50%);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#Name:hover{    color: black;
+    box-shadow: 15px 15px 15px grey;
+}
+
+
+#OpenApiTitle
+{
+    border-radius: 25px;
+    color: white;
+     background-image: linear-gradient(to right,  #D7AF64, #DFBF83);
+    border: 2px solid white;
+    font-weight: 300;
+    font-size: 20px;
+    height: 15px;     
+    width: 1200px;
+    max-width: calc(100% - 50%);
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+#OpenApiTitle:hover{   
+     color: black;
+    box-shadow: 15px 15px 15px grey;
+}
+
+
+#OpenApiVersion
+{
+    border-radius: 25px;
+    color: white;
+     background-image: linear-gradient(to right,  #D7AF64, #DFBF83);
+    border: 2px solid white;
+    font-weight: 300;
+    font-size: 20px;
+    height: 15px;     
+    width: 1200px;
+    max-width: calc(100% - 50%);
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+#OpenApiVersion:hover{    color: black;
+    box-shadow: 15px 15px 15px grey;
+}
+
+
+#OpenApiDesc
+{
+    border-radius: 25px;
+    color: white;
+     background-image: linear-gradient(to right,  #D7AF64, #DFBF83);
+    border: 2px solid white;
+    font-weight: 300;
+    font-size: 20px;
+    height: 15px;     
+    width: 1200px;
+    max-width: calc(100% - 50%);
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+#OpenApiDesc:hover{    color: black;
+    box-shadow: 15px 15px 15px grey;
+}
+
+
+#OpenApiContactEmail
+{
+    border-radius: 25px;
+    color: white;
+     background-image: linear-gradient(to right,  #D7AF64, #DFBF83);
+    border: 2px solid white;
+    font-weight: 300;
+    font-size: 20px;
+    height: 15px;     
+    width: 1200px;
+    max-width: calc(100% - 50%);
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+#OpenApiContactEmail:hover{    color: black;
+    box-shadow: 15px 15px 15px grey;
+}
+
+
+#OpenApiContactName
+{
+    border-radius: 25px;
+    color: white;
+     background-image: linear-gradient(to right,  #D7AF64, #DFBF83);
+    border: 2px solid white;
+    font-weight: 300;
+    font-size: 20px;
+    height: 15px;     
+    width: 1200px;
+    max-width: calc(100% - 50%);
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+#OpenApiContactName:hover{    color: black;
+    box-shadow: 15px 15px 15px grey;
+}
+
+
+#OpenApiContactUrl
+{
+    border-radius: 25px;
+    color: white;
+     background-image: linear-gradient(to right,  #D7AF64, #DFBF83);
+    border: 2px solid white;
+    font-weight: 300;
+    font-size: 20px;
+    height: 15px;     
+    width: 1200px;
+    max-width: calc(100% - 50%);
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+#OpenApiContactUrl:hover{    color: black;
+    box-shadow: 15px 15px 15px grey;
+}
+
+
+#OpenApiLicenseName
+{
+    border-radius: 25px;
+    color: white;
+     background-image: linear-gradient(to right,  #D7AF64, #DFBF83);
+    border: 2px solid white;
+    font-weight: 300;
+    font-size: 20px;
+    height: 15px;     
+    width: 1200px;
+    max-width: calc(100% - 50%);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#OpenApiLicenseName:hover{    color: black;
+    box-shadow: 15px 15px 15px grey;
+}
+
+
+#OpenApiLicenseUrl 
+{
+    border-radius: 25px;
+    color: white;
+     background-image: linear-gradient(to right,  #D7AF64, #DFBF83);
+    border: 2px solid white;
+    font-weight: 300;
+    font-size: 20px;
+    height: 15px;     
+    width: 1200px;
+    max-width: calc(100% - 50%);
+    margin: 0 auto;
+    padding: 20px;  
+}
+
+#OpenApiLicenseUrl:hover{    color: black;
+    box-shadow: 15px 15px 15px grey;
+}
+
+
+#TermsOfService
+{
+     border-radius: 25px;
+    color: white;
+     background-image: linear-gradient(to right,  #D7AF64, #DFBF83);
+    border: 2px solid white;
+    font-weight: 300;
+    font-size: 20px;
+    height: 15px;     
+    width: 1200px;
+    max-width: calc(100% - 50%);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#TermsOfService:hover{    color: black;
+    box-shadow: 15px 15px 15px grey;
+}
+
+
+#bizOwner
+{
+     border-radius: 25px;
+    color: white;
+     background-image: linear-gradient(to right,  #D7AF64, #DFBF83);
+    border: 2px solid white;
+    font-weight: 300;
+    font-size: 20px;
+    height: 15px;     
+    width: 1200px;
+    max-width: calc(100% - 50%);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#bizOwner:hover{    color: black;
+    box-shadow: 15px 15px 15px grey;
+}
+
+
+#bizOwnerMail
+{
+     border-radius: 25px;
+    color: white;
+     background-image: linear-gradient(to right,  #D7AF64, #DFBF83);
+    border: 2px solid white;
+    font-weight: 300;
+    font-size: 20px;
+    height: 15px;     
+    width: 1200px;
+    max-width: calc(100% - 50%);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#bizOwnerMail:hover{    color: black;
+    box-shadow: 15px 15px 15px grey;
+}
+
+
+#endPointSecurityScheme
+{
+     border-radius: 25px;
+    color: white;
+     background-image: linear-gradient(to right,  #D7AF64, #DFBF83);
+    border: 2px solid white;
+    font-weight: 300;
+    font-size: 20px;
+    height: 15px;     
+    width: 1200px;
+    max-width: calc(100% - 50%);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#endPointSecurityScheme:hover{    color: black;
+    box-shadow: 15px 15px 15px grey;
+}
+
+
+#endPointSecurityAuthType
+{
+     border-radius: 25px;
+    color: white;
+     background-image: linear-gradient(to right,  #D7AF64, #DFBF83);
+    border: 2px solid white;
+    font-weight: 300;
+    font-size: 20px;
+    height: 15px;     
+    width: 1200px;
+    max-width: calc(100% - 50%);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#endPointSecurityAuthType:hover{    color: black;
+    box-shadow: 15px 15px 15px grey;
+}
+
+
+#endPointSecurityUsername
+{
+     border-radius: 25px;
+    color: white;
+     background-image: linear-gradient(to right,  #D7AF64, #DFBF83);
+    border: 2px solid white;
+    font-weight: 300;
+    font-size: 20px;
+    height: 15px;     
+    width: 1200px;
+    max-width: calc(100% - 50%);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#endPointSecurityUsername:hover{    color: black;
+    box-shadow: 15px 15px 15px grey;
+}
+
+
+#tags
+{
+     border-radius: 25px;
+    color: white;
+     background-image: linear-gradient(to right,  #D7AF64, #DFBF83);
+    border: 2px solid white;
+    font-weight: 300;
+    font-size: 20px;
+    height: 15px;     
+    width: 1200px;
+    max-width: calc(100% - 50%);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#tags:hover{    color: black;
+    box-shadow: 15px 15px 15px grey;
+}
+
+
+#endPointSecurityPassword
+{
+     border-radius: 25px;
+    color: white;
+     background-image: linear-gradient(to right,  #D7AF64, #DFBF83);
+    border: 2px solid white;
+    font-weight: 300;
+    font-size: 20px;
+    height: 15px;     
+    width: 1200px;
+    max-width: calc(100% - 50%);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#endPointSecurityPassword:hover{    color: black;
+    box-shadow: 15px 15px 15px grey;
+}
+
+
+#techOwner
+{
+     border-radius: 25px;
+    color: white;
+     background-image: linear-gradient(to right,  #D7AF64, #DFBF83);
+    border: 2px solid white;
+    font-weight: 300;
+    font-size: 20px;
+    height: 15px;     
+    width: 1200px;
+    max-width: calc(100% - 50%);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#techOwner:hover{    color: black;
+    box-shadow: 15px 15px 15px grey;
+}
+
+
+#techOwnerMail
+{
+     border-radius: 25px;
+    color: white;
+     background-image: linear-gradient(to right,  #D7AF64, #DFBF83);
+    border: 2px solid white;
+    font-weight: 300;
+    font-size: 20px;
+    height: 15px;     
+    width: 1200px;
+    max-width: calc(100% - 50%);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#techOwnerMail:hover{    color: black;
+    box-shadow: 15px 15px 15px grey;
+}
+
+
+#tiersCollection
+{
+    border-radius: 25px;
+    color: white;
+     background-image: linear-gradient(to right,  #D7AF64, #DFBF83);
+    border: 2px solid white;
+    font-weight: 300;
+    font-size: 20px;
+    height: 15px;     
+    width: 1200px;
+    max-width: calc(100% - 50%);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#tiersCollection:hover{    color: black;
+    box-shadow: 15px 15px 15px grey;
+}
+
+
+#visibility
+{
+     border-radius: 25px;
+    color: white;
+     background-image: linear-gradient(to right,  #D7AF64, #DFBF83);
+    border: 2px solid white;
+    font-weight: 300;
+    font-size: 20px;
+    height: 15px;     
+    width: 1200px;
+    max-width: calc(100% - 50%);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#visibility:hover{    color: black;
+    box-shadow: 15px 15px 15px grey;
+}
+
+
+#CORSAllowOrigins
+{
+     border-radius: 25px;
+    color: white;
+     background-image: linear-gradient(to right,  #D7AF64, #DFBF83);
+    border: 2px solid white;
+    font-weight: 300;
+    font-size: 20px;
+    height: 15px;     
+    width: 1200px;
+    max-width: calc(100% - 50%);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#CORSAllowOrigins:hover{    color: black;
+    box-shadow: 15px 15px 15px grey;
+}
+
+
+#CorsAllowHeaders
+{
+     border-radius: 25px;
+    color: white;
+     background-image: linear-gradient(to right,  #D7AF64, #DFBF83);
+    border: 2px solid white;
+    font-weight: 300;
+    font-size: 20px;
+    height: 15px;     
+    width: 1200px;
+    max-width: calc(100% - 50%);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#CorsAllowHeaders:hover{    color: black;
+    box-shadow: 15px 15px 15px grey;
+}
+
+
+#Login
+{
+     border-radius: 25px;
+    color: white;
+     background-image: linear-gradient(to right,  #D7AF64, #DFBF83);
+    border: 2px solid white;
+    font-weight: 300;
+    font-size: 20px;
+    height: 15px;     
+    width: 1200px;
+    max-width: calc(100% - 50%);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#Login:hover{    color: black;
+    box-shadow: 15px 15px 15px grey;
+}
+
+
+#PostLims
+{
+     border-radius: 25px;
+    color: white;
+     background-image: linear-gradient(to right,  #D7AF64, #DFBF83);
+    border: 2px solid white;
+    font-weight: 300;
+    font-size: 20px;
+    height: 15px;     
+    width: 1200px;
+    max-width: calc(100% - 50%);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#PostLims:hover{    color: black;
+    box-shadow: 15px 15px 15px grey;
+}
+
+
+#sslCallback
+{
+     border-radius: 25px;
+    color: white;
+     background-image: linear-gradient(to right,  #D7AF64, #DFBF83);
+    border: 2px solid white;
+    font-weight: 300;
+    font-size: 20px;
+    height: 15px;     
+    width: 1200px;
+    max-width: calc(100% - 50%);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#sslCallback:hover{    color: black;
+    box-shadow: 15px 15px 15px grey;
+}
+
+
+#grant_type
+{
+     border-radius: 25px;
+    color: white;
+     background-image: linear-gradient(to right,  #D7AF64, #DFBF83);
+    border: 2px solid white;
+    font-weight: 300;
+    font-size: 20px;
+    height: 15px;     
+    width: 1200px;
+    max-width: calc(100% - 50%);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#grant_type:hover{    color: black;
+    box-shadow: 15px 15px 15px grey;
+}
+
+
+#clientId
+{
+     border-radius: 25px;
+    color: white;
+     background-image: linear-gradient(to right,  #D7AF64, #DFBF83);
+    border: 2px solid white;
+    font-weight: 300;
+    font-size: 20px;
+    height: 15px;     
+    width: 1200px;
+    max-width: calc(100% - 50%);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#clientId:hover{    color: black;
+    box-shadow: 15px 15px 15px grey;
+}
+
+
+#clientSecret
+{
+     border-radius: 25px;
+    color: white;
+     background-image: linear-gradient(to right,  #D7AF64, #DFBF83);
+    border: 2px solid white;
+    font-weight: 300;
+    font-size: 20px;
+    height: 15px;     
+    width: 1200px;
+    max-width: calc(100% - 50%);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#clientSecret:hover{    color: black;
+    box-shadow: 15px 15px 15px grey;
+}
+
+
+#scope
+{
+    border-radius: 25px;
+    color: white;
+     background-image: linear-gradient(to right,  #D7AF64, #DFBF83);
+    border: 2px solid white;
+    font-weight: 300;
+    font-size: 20px;
+    height: 15px;     
+    width: 1200px;
+    max-width: calc(100% - 50%);
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+#scope :hover{    color: black;
+    box-shadow: 15px 15px 15px grey;
+}
+
