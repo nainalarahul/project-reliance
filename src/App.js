@@ -1,10 +1,10 @@
 // import logo from './logo.svg';
 import './App.css';
-import LIMSService from './components/LIMSService';
+import Mainpage from './components/Mainpage';
 
 function App() {
   return (
-    <LIMSService />
+    <Mainpage />
   );
 }
 
