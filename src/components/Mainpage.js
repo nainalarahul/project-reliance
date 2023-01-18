@@ -23,7 +23,7 @@ const Mainpage = () => {
         <br/>
         <Picker
         selectedValue={selectedValue}
-        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)} style={{ width: 300, height: 50 }}
+        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)} style={{ width: 300, height: 40 }}
       >
         {data.map((item, index) => (
           <Picker.Item key={index} label={item.name} value={item.id} />
@@ -37,14 +37,13 @@ const Mainpage = () => {
         <br/>
       <Picker 
         selectedValue={selectedValue}
-        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)} style={{ width: 300, height: 50 }}
+        onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)} style={{ width: 300, height: 40 }}
       >
         {data.map((item, index) => (
           <Picker.Item key={index} label={item.name} value={item.id} />
         ))}
       </Picker>
         </View>
-        
     </View>
   );
 };
