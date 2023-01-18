@@ -2,7 +2,7 @@ import React from 'react';
 import "./css/Services.css";
 
 const LIMSService = () => {
-
+    document.title = "LIMS Services";
     const DefaultRef = React.useRef();
     const MicrosoftAspNetCoreRef = React.useRef();
     const AllowedHostsRef = React.useRef();

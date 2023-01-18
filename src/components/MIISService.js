@@ -4,6 +4,7 @@ import "./css/Services.css";
 
 const MIISService = () => {
 
+    document.title = "MIIS Services";
     const DefaultRef = React.useRef();
     const MicrosoftAspNetCoreRef = React.useRef();
     const AllowedHostsRef = React.useRef();
