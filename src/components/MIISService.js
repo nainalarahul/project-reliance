@@ -1,7 +1,8 @@
 import React from 'react';
 import "./css/Services.css";
 
-const LIMSService = () => {
+
+const MIISService = () => {
 
     const DefaultRef = React.useRef();
     const MicrosoftAspNetCoreRef = React.useRef();
@@ -277,4 +278,4 @@ const LIMSService = () => {
     );
 }
 
-export default LIMSService;
+export default MIISService;
