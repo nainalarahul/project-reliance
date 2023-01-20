@@ -8,9 +8,9 @@
 
   .text_imp{
     font-size: 30px;
+    padding: 15px;
     margin-top: 20px;
     text-align: center;
-    color: linear-gradient(white,black);
     color: whitesmoke;
   }
 

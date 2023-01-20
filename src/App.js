@@ -1,10 +1,10 @@
 
 import './App.css';
-import Mainpage from './components/Mainpage';
+import LIMSService from './components/frontend/LIMSService';
 
 function App() {
   return (
-    <Mainpage />
+    <LIMSService />
   );
 }
 
