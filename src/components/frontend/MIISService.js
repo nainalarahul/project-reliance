@@ -1,5 +1,5 @@
 import React from 'react';
-import "./css/Services.css";
+import "../css/Services.css";
 
 
 const MIISService = () => {
