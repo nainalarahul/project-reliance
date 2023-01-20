@@ -1,7 +1,8 @@
+//code to run node.js locally and enable the database to be started
 const mysql = require('mysql');
 const cors = require('cors');
 
-
+//connecting to the local database 
 const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
