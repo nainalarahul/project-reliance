@@ -89,6 +89,8 @@ const LIMSService = () => {
         const link = document.createElement('a');
         const url = `data:text/json;charset=utf-8,${encodeURIComponent(JSON.stringify(obj))}`
         link.href = url;
+        //take the link from here and try to directly push on to git.
+        //details of the git to be taken from the user.
         link.download = 'appsettings.json';
         link.click();
     }
@@ -108,7 +110,7 @@ const LIMSService = () => {
             </div>
             <div class="default">  
             <label htmlFor='CORSOrigin'>CORSOrigin</label><br/>
-            <input type='text' id='CORSOrigin' defaultValue= "https://all the urls there are" ref={CorsOriginRef} /><br />
+            <input type='text' id='CORSOrigin' defaultValue= "http://" ref={CorsOriginRef} /><br />
             </div>   
 
             <div class="default">  

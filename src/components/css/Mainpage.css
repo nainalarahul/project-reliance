@@ -1,6 +1,35 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 #text_defined{
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 300;
+    text-align: center;
     color: whitesmoke;
 }
 
+.services_buttons
+{
+    text-align: center;
+    overflow:hidden;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    height: 150px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+#button_service{
+    display: inline-block;
+    width: 250px;
+    height: 60px;
+    border-radius: 50px;
+    border-color: aqua;
+}
+
+#button_service:hover{
+    box-shadow: 0px 5px 5px 0px grey;
+}
