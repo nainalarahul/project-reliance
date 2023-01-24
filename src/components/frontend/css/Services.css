@@ -6,52 +6,6 @@ html,body{
     font-family: 'Inter', sans-serif;   
   }
 
-  .footer {
-    position: fixed;
-    height: 50px;
-    font-size: 20px;
-    width: 100%;
-    right: 1%;
-    bottom: 0px;
-    text-align: end;
-    color: white;
-   }
-
-.default {
-   margin-top: 20px;
-   font-size: 24px;
-    text-align: center;
-    color: whitesmoke;
-  }
-
-  .maintext{
-    font-size: 40px;
-    margin-top: 20px;
-    color: whitesmoke;
-    text-align: center;
-  }
-  .text_imp{
-    font-size: 20px;
-    padding: 15px;
-    text-align: center;
-    color: whitesmoke;
-  }
-
-  .button_submit {
-    background-color: #00A36C;
-    color: white;
-    border-radius: 100px;
-    border: 3px solid whitesmoke;
-    font-size: 36px;
-    font-weight: 400;
-    width: 335px;
-    height: 80px;
-}
-
-    .button_submit:hover{
-    background-color: #2AAA8A;
-    }
-
   #Default {
     border-radius: 25px;
     color: white;
