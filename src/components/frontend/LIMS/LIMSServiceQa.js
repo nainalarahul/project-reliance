@@ -3,7 +3,8 @@ import React from 'react';
 import '../css/LIMSService.css';
 import '../css/Services.css';
 import Footer from '../footer';
-
+import { faCloudArrowUp } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const LIMSServiceQa = () => {
     document.title = "LIMS Services";
@@ -24,7 +25,7 @@ const LIMSServiceQa = () => {
         link.href = url;
         //take the link from here and try to directly push on to git.
         //details of the git to be taken from the user.
-        link.download = 'appsettings_qa.json';
+        link.download = 'appsettings_dev.json';
         link.click();
     }
 
@@ -51,9 +52,10 @@ const LIMSServiceQa = () => {
             </div>
             <br/>
             <div class="default">
+            
             <button class="button_submit">
-                Push
-                <img src='' alt=''/>
+                push 
+                 <FontAwesomeIcon icon={faCloudArrowUp} style={{paddingLeft:10}}/>
             </button>
             </div>
         </form>

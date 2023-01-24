@@ -1,9 +1,9 @@
 
 import React from 'react';
 import '../css/LIMSService.css';
-import { Text } from 'react-native-web';
 import '../css/Services.css';
 import Footer from '../footer';
+import { faCloudArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const LIMSServiceDev = () => {
@@ -35,12 +35,12 @@ const LIMSServiceDev = () => {
       <div class="rectangluarfield">
           <form onSubmit={submitHandler}  >
             <div class="maintext">
-                <Text>
+                <text>
                     LIMS-Dev
-                </Text>
+                </text>
             </div>
           <div class="text_imp">
-            <Text> (Select the field to change value)</Text>
+            <text> (Select the field to change value)</text>
           </div>
            <div class="default"> 
             <label htmlFor='Default'>Default </label><br/>
@@ -52,9 +52,10 @@ const LIMSServiceDev = () => {
             </div>
             <br/>
             <div class="default">
+            
             <button class="button_submit">
-                push
-                <FontAwesomeIcon icon="code-commit" />
+                push 
+                 <FontAwesomeIcon icon={faCloudArrowUp} style={{paddingLeft:10}}/>
             </button>
             </div>
         </form>
