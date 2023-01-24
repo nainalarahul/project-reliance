@@ -62,42 +62,10 @@ const Mainpage = () => {
           <text>Choose one of the Microservices from Below</text>
         </view>
       </div>
-      <div class='services_buttons'>
-                <view>
-                  <button id='button_service' onClick={{}} value="LIMS">
-                    <h2>LIMS</h2>
-                  </button>
-                </view>
-                <view>
-                  <button id='button_service' value="MIIS">
-                    <h2>MIIS</h2>
-                  </button>
-                </view>
-                <view>
-                  <button id='button_service' value="OMPRO">
-                    <h2>OMPRO</h2>
-                  </button>
-                </view>
-                <view>
-                  <button id='button_service' value="RCOW">
-                    <h2>RCOW</h2>
-                  </button>
-                  </view>
-                  <view>
-                  <button id='button_service' value="">
-                    <h2>LIMS</h2>
-                  </button>
-                </view>
-                <view>
-                  <button id='button_service' value="">
-                    <h2>New</h2>
-                  </button>
-                </view>
-                                <view>
-                  <button id='button_service' value="">
-                    <h2>NeW</h2>
-                  </button>
-                </view>    
+     <div>
+      <view>
+            <input type={checkbox} id="" name='LIMS' value={LIMS}></input>
+      </view>
       </div>
     </div>
     <Footer />
