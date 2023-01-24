@@ -1,11 +1,11 @@
-
-html,body{
+html, body {
+    max-width: 100%;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-    font-family: 'Inter', sans-serif;   
-  }
+    /* background:linear-gradient(269.62deg, #4D9BCB -8.05%, rgba(0, 158, 255, 0) 189.81%); */
+}
+
 #text_defined{
     font-size: 30px;
     font-weight: 300;

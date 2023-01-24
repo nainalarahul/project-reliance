@@ -1,9 +1,10 @@
 
 import React from 'react';
 import '../css/LIMSService.css';
+import { Text } from 'react-native-web';
 import '../css/Services.css';
 import Footer from '../footer';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const LIMSServiceDev = () => {
     document.title = "LIMS Services";
@@ -34,12 +35,12 @@ const LIMSServiceDev = () => {
       <div class="rectangluarfield">
           <form onSubmit={submitHandler}  >
             <div class="maintext">
-                <text>
+                <Text>
                     LIMS-Dev
-                </text>
+                </Text>
             </div>
           <div class="text_imp">
-            <text> (Select the field to change value)</text>
+            <Text> (Select the field to change value)</Text>
           </div>
            <div class="default"> 
             <label htmlFor='Default'>Default </label><br/>
@@ -52,8 +53,8 @@ const LIMSServiceDev = () => {
             <br/>
             <div class="default">
             <button class="button_submit">
-                Push
-                <img src='' alt=''/>
+                push
+                <FontAwesomeIcon icon="code-commit" />
             </button>
             </div>
         </form>
