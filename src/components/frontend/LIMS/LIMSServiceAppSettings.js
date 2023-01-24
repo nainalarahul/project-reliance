@@ -3,7 +3,8 @@ import React from 'react';
 import '../css/LIMSService.css';
 import '../css/Services.css';
 import Footer from '../footer';
-
+import { faCloudArrowUp } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const LIMSServiceAppSettings = () => {
     document.title = "LIMS Services";
@@ -279,8 +280,8 @@ const LIMSServiceAppSettings = () => {
             <br/>
             <div class="default">
             <button class="button_submit">
-                Push
-                <img src='' alt=''/>
+                push 
+                 <FontAwesomeIcon icon={faCloudArrowUp} style={{paddingLeft:10}}/>
             </button>
             </div>
             <Footer />
