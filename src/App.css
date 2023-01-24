@@ -1,5 +1,6 @@
   body{
-   background-image: linear-gradient(90deg, #4D9BCB,#80B8DA);
-   background-image: linear-gradient(90deg, #80B8DA,#4D9BCB);
-
+    width: 100%;
+    background: linear-gradient(270deg, #4D9BCB -8.44%, rgba(0, 158, 255, 0) 216.56%);
+    @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+    font-family: 'Inter', sans-serif;
   }

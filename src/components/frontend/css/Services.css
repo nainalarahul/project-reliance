@@ -1,14 +1,38 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+    font-family: 'Inter', sans-serif;   
+  }
+
+  .footer {
+    position: fixed;
+    height: 50px;
+    font-size: 20px;
+    width: 100%;
+    right: 1%;
+    bottom: 0px;
+    text-align: end;
+    color: white;
+   }
+
 .default {
    margin-top: 20px;
-   font-size: 25px;
+   font-size: 24px;
     text-align: center;
     color: whitesmoke;
   }
 
-  .text_imp{
-    font-size: 30px;
-    padding: 15px;
+  .maintext{
+    font-size: 40px;
     margin-top: 20px;
+    color: whitesmoke;
+    text-align: center;
+  }
+  .text_imp{
+    font-size: 20px;
+    padding: 15px;
     text-align: center;
     color: whitesmoke;
   }
@@ -16,11 +40,12 @@
   .button_submit {
     background-color: #00A36C;
     color: white;
-    border-radius: 25px;
+    border-radius: 100px;
     border: 3px solid whitesmoke;
-    font-size: 20px;
-    width: 300px;
-    height: 50px;
+    font-size: 36px;
+    font-weight: 400;
+    width: 335px;
+    height: 80px;
 }
 
     .button_submit:hover{
@@ -30,7 +55,7 @@
   #Default {
     border-radius: 25px;
     color: white;
-     background-image: linear-gradient(to right,  #D7AF64, #DFBF83);
+     background-image: linear-gradient(to right,  rgb(215, 175, 100), #DFBF83);
     border: 2px solid white;
     font-weight: 300;
     font-size: 20px;
@@ -49,13 +74,13 @@
 
 #MicrosoftAspNetCore
 {
-    border-radius: 25px;
+    border-radius: 600px;
     color: white;
      background-image: linear-gradient(to right,  #D7AF64, #DFBF83);
     border: 2px solid white;
     font-weight: 300;
     font-size: 20px;
-    height: 15px;     
+    height: 15px;
     width: 1200px;
     max-width: calc(100% - 50%);
     margin: 0 auto;

@@ -1,7 +1,11 @@
-import React from 'react';
-import "../css/Services.css";
 
-const LIMSService = () => {
+import React from 'react';
+import '../css/LIMSService.css';
+import '../css/Services.css';
+import Footer from '../footer';
+
+
+const LIMSServiceAppSettings = () => {
     document.title = "LIMS Services";
     const DefaultRef = React.useRef();
     const MicrosoftAspNetCoreRef = React.useRef();
@@ -37,7 +41,6 @@ const LIMSService = () => {
     const ClientIdRef = React.useRef();
     const ClientSecretRef = React.useRef();
     const ScopeRef = React.useRef();
-
     const submitHandler = (e) => {
         e.preventDefault();
         const obj = {Logging:{LogLevel:
@@ -96,9 +99,15 @@ const LIMSService = () => {
     }
 
     return (
+
         <form onSubmit={submitHandler}  >
+            <div class="maintext">
+                <text>
+                    LIMS-Appsettings
+                </text>
+            </div>
           <div class="text_imp">
-            <h2> Select any field you want to Overwrite</h2>
+            <text> (Select the field to change value)</text>
           </div>
            <div class="default"> 
             <label htmlFor='Default'>Default </label><br/>
@@ -268,15 +277,16 @@ const LIMSService = () => {
             <input type='text' id='scope' defaultValue="" ref={ScopeRef} /><br />
             </div>
             <br/>
-            <div class="text_imp">
-            <h6>Click on submit to generate a Json file</h6>
-            </div>
             <div class="default">
-            <button class="button_submit">Submit</button>
+            <button class="button_submit">
+                Push
+                <img src='' alt=''/>
+            </button>
             </div>
-            
+            <Footer />
         </form>
     );
 }
 
-export default LIMSService;
+export default LIMSServiceAppSettings;
+

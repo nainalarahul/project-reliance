@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { View, Picker } from 'react-native';
 import "../css/Mainpage.css";
+import Footer from './footer';
 
 const Mainpage = () => {
     const [data, setData] = useState([]);
@@ -99,6 +100,7 @@ const Mainpage = () => {
                 </view>    
       </div>
     </div>
+    <Footer />
     </div>
   );
 };
