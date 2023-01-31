@@ -1,45 +1,43 @@
-//azure connection but not yet run this code
 
 import React, { useState } from 'react';
-import { Button, Settings, Text, View } from 'react-native';
+import { Button, Text, View } from 'react-native';
 import axios from 'axios';
 
-const App = () => {
+const PAT = 'rzuux4bfyknoc247asdqwm7pxxrmwpth2a5nyv7fnkmr5fknoq6a';
+const AzureConnection = () => {
   const [message, setMessage] = useState('');
-
   const handleClick = async () => {
     try {
-      // Update the project and repository paths in the URL below
-      const projectPath = 'https://dev.azure.com/<ORGANIZATION>/<PROJECT>/_apis/git/repositories/<REPO_ID>/pushes';
+    
+      const projectPath = 'https://dev.azure.com/testserverrel/_git/reltesting?version=GBmain&path=/NewFolder';
 
-      // Authorize the API request with a personal access token
       const headers = {
-        Authorization: 'Bearer <YOUR_ACCESS_TOKEN_HERE>',
         'Content-Type': 'application/json',
-      };
+        // 'Authorization': 'Basic dXNlcm5hbWU6cnp1dXg0YmZ5a25vYzI0N2FzZHF3bTdweHhybXdwdGgyYTVueXY3Zm5rbXI1Zmtub3E2YQ==',
+        'Authorization': `Bearer ${PAT}`,
 
-      // Create a new file in the repository
+
+      }
+       
+      
+      console.log('Headers:', headers);
       const result = await axios.post(
         projectPath,
         {
           refUpdates: [
             {
-              name: 'refs/heads/master',
+              name: 'refs/heads/Files',
               newObjectId: '<COMMIT_HASH>',
             },
           ],
           commits: [
             {
-              comment: 'Initial commit',
+              comment: 'New File created',
               changes: [
                 {
                   changeType: 'add',
                   item: {
-                    path: '/data.json',
-                  },
-                  newContent: {
-                    content: btoa(JSON.stringify({ key: 'value' })),
-                    contentType: 'rawText',
+                    path: '/home/rahulnainala/Desktop/github/project-reliance/script.js',
                   },
                 },
               ],
@@ -48,6 +46,7 @@ const App = () => {
         },
         { headers }
       );
+      // This code is making an HTTP POST request to the URL specified by projectPath with a JSON payload that includes information about updates to a Git repository. The payload includes an array of refUpdates, with a single update to the Git reference refs/heads/main to change its object ID to the specified COMMIT_HASH. The payload also includes an array of commits, with a single commit that includes a comment "New File created" and a change to add a file at the specified path. The request also includes headers as additional request headers.
 
       setMessage(`File pushed successfully with push ID: ${result.data.commitId}`);
     } catch (error) {
@@ -63,11 +62,20 @@ const App = () => {
   );
 };
 
-export default App;
+export default AzureConnection;
 
 
-// to get the data from azure as a token we need to get it from these :
-//   1. click profile go to Settings
-//   2. go to personal aceess tokens and click on new tokens
-//   3. select the scopes needed for the token based on your use case.
-//   4. click the create button to create the token
+
+// import axios from 'axios';
+
+// const getData = async () => {
+//   const accessToken = await getAccessTokenFromAAD(); // implement this function to get the access token from AAD
+//   const headers = {
+//     'Content-Type': 'application/json',
+//     'Authorization': `Bearer ${accessToken}`,
+//   };
+
+//   const response = await axios.get('https://dev.azure.com/{organization}/{project}/_apis/build/builds?api-version=6.0', { headers });
+
+//   console.log(response.data);
+// };

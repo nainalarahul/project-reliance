@@ -1,45 +1,22 @@
-//code to connect to github 
 
-import React, { useState } from 'react';
-import { Button, Text, View } from 'react-native';
-import axios from 'axios';
+import Base64 from 'react-native-base64';
+async function fetchData(url, username, password) {
+  const encodedCredentials = await Base64.btoa(`${username}:${password}`)
 
-const App = () => {
-  const [message, setMessage] = useState('');
+  try {
+    let response = await fetch(url, {
+      headers: {
+        'Authorization': `Basic ${encodedCredentials}`,
+      },
+    })
 
-  const handleClick = async () => {
-    try {
-      // Update the repository path in the URL below
-      const repoPath = 'https://api.github.com/repos/user/repo';
-
-      // Authorize the API request with a personal access token
-      const headers = {
-        Authorization: 'Token <YOUR_ACCESS_TOKEN_HERE>',
-        'Content-Type': 'application/json',
-      };
-
-      // Create a new file in the repository
-      await axios.post(
-        `${repoPath}/contents/data.json`,
-        {
-          message: 'Initial commit',
-          content: btoa(JSON.stringify({ key: 'value' })),
-        },
-        { headers }
-      );
-
-      setMessage('File pushed successfully!');
-    } catch (error) {
-      setMessage(`Error: ${error.message}`);
+    let responseJson = await response.json()
+    return responseJson
+  } catch (error) {
+    if (error.status === 401) {
+      // Handle invalid credentials error
+    } else {
+      // Handle other errors
     }
-  };
-return(
-    <view>
-
-    <Button onPress={handleClick} title="cl"
-    ></Button>
-    </view>
-);
-};
-
-export default App;
+  }
+}

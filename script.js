@@ -1,0 +1,4 @@
+{
+    "Default": "Information",
+    "Microsoft": "Warning",
+}
