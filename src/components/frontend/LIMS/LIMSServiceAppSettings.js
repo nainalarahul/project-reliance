@@ -95,7 +95,7 @@ const LIMSServiceAppSettings = () => {
         link.href = url;
         //take the link from here and try to directly push on to git.
         //details of the git to be taken from the user.
-        link.download = 'appsettings.json';
+        link.download = 'appsettings.json'; //forward the file to devops
         link.click();
     }
 

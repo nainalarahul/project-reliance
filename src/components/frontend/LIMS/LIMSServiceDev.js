@@ -52,7 +52,9 @@ const LIMSServiceDev = () => {
             </div>
             <br/>
             <div class="default">
-            
+            <div class="text_imp">
+            <text> (Click on the button to push the code to the cloud)</text>
+            </div>
             <button class="button_submit">
                 push 
                  <FontAwesomeIcon icon={faCloudArrowUp} style={{paddingLeft:10}}/>

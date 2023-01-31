@@ -1,67 +1,73 @@
-import React, { useState } from "react";
-import { StyleSheet, View, Button, Text } from "react-native";
-import axios from "axios";
+//azure connection but not yet run this code
+
+import React, { useState } from 'react';
+import { Button, Settings, Text, View } from 'react-native';
+import axios from 'axios';
 
 const App = () => {
-  const [file, setFile] = useState(null);
+  const [message, setMessage] = useState('');
 
-  const handleButtonPress = async () => {
-    // First, you'll need to get an access token from Azure DevOps
-    const token = await axios.post(
-      "https://app.vssps.visualstudio.com/oauth2/token",
-      {
-        client_id: "your-client-id",
-        client_secret: "your-client-secret",
-        resource: "https://your-organization.visualstudio.com",
-        grant_type: "client_credentials",
-      }
-    ).then(res => res.data.access_token);
+  const handleClick = async () => {
+    try {
+      // Update the project and repository paths in the URL below
+      const projectPath = 'https://dev.azure.com/<ORGANIZATION>/<PROJECT>/_apis/git/repositories/<REPO_ID>/pushes';
 
-    // Next, you'll use the access token to upload the file to Azure DevOps
-    const formData = new FormData();
-    formData.append("file", {
-      uri: file.uri,
-      type: file.type,
-      name: file.fileName
-    });
+      // Authorize the API request with a personal access token
+      const headers = {
+        Authorization: 'Bearer <YOUR_ACCESS_TOKEN_HERE>',
+        'Content-Type': 'application/json',
+      };
 
-    await axios.patch(
-      `https://dev.azure.com/{organization}/{project}/_apis/tfvc/items?path=%2F{foldername}%2F${file.fileName}&version=&versionType=None&includeContent=true&overWrite=true`,
-      formData,
-      {
-        headers: {
-          "Content-Type": "application/json",
-          "Authorization": `Bearer ${token}`,
+      // Create a new file in the repository
+      const result = await axios.post(
+        projectPath,
+        {
+          refUpdates: [
+            {
+              name: 'refs/heads/master',
+              newObjectId: '<COMMIT_HASH>',
+            },
+          ],
+          commits: [
+            {
+              comment: 'Initial commit',
+              changes: [
+                {
+                  changeType: 'add',
+                  item: {
+                    path: '/data.json',
+                  },
+                  newContent: {
+                    content: btoa(JSON.stringify({ key: 'value' })),
+                    contentType: 'rawText',
+                  },
+                },
+              ],
+            },
+          ],
         },
-      }
-    ).then(response => {
-      console.log(response);
-    }).catch(error => {
-      console.log(error);
-    });
+        { headers }
+      );
+
+      setMessage(`File pushed successfully with push ID: ${result.data.commitId}`);
+    } catch (error) {
+      setMessage(`Error: ${error.message}`);
+    }
   };
 
   return (
-    <View style={styles.container}>
-      <Button
-        title="Upload JSON file"
-        onPress={handleButtonPress}
-      />
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Button onPress={handleClick} title="Push JSON File" />
+      <Text>{message}</Text>
     </View>
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
-
 export default App;
 
 
-// replace your-client-id and your-client-secret with the appropriate values from your Azure DevOps application, and organization and project with the appropriate values for your organization and project. The foldername is the folder where you want to upload the file, and the file variable is the file that you want to upload.
-
-// Additionally, you need to import the file picker to pick the file from the user's device and then pass it to the file variable.
+// to get the data from azure as a token we need to get it from these :
+//   1. click profile go to Settings
+//   2. go to personal aceess tokens and click on new tokens
+//   3. select the scopes needed for the token based on your use case.
+//   4. click the create button to create the token
