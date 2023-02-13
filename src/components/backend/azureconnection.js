@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button, Text, View } from 'react-native';
 import axios from 'axios';
@@ -15,8 +14,6 @@ const AzureConnection = () => {
         'Content-Type': 'application/json',
         'Authorization': 'Basic OnE1Z3lvY3psZDdoendvNGhlNDJoZ3R5N3NleGZiZWV2N2t3NGl1dXNmMzZvYngzc3FjYWE=',
         // 'Authorization': `Bearer ${PAT}`,
-
-
       }
        
       console.log('Headers:', headers);
@@ -62,4 +59,3 @@ const AzureConnection = () => {
 };
 
 export default AzureConnection;
-

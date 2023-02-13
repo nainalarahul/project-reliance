@@ -1,7 +1,7 @@
 
 import './App.css';
+//import LIMSServiceDev from './components/frontend/LIMS/LIMSServiceDev';
 import AzureConnection from './components/backend/azureconnection';
-// import CheckConn from './components/backend/checkconn';
 
 function App() {
   return (
