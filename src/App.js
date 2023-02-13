@@ -1,11 +1,11 @@
 
 import './App.css';
-//import LIMSServiceDev from './components/frontend/LIMS/LIMSServiceDev';
-import AzureConnection from './components/backend/azureconnection';
+import DevOpsCommitAndPush from './components/backend/devopsconnectiontest01';
+//import AzureConnection from './components/backend/azureconnection';
 
 function App() {
   return (
-    <AzureConnection />
+    <DevOpsCommitAndPush />
   );
 }
 
